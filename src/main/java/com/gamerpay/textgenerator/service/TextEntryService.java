@@ -15,7 +15,7 @@ public class TextEntryService {
     private final TextEntryRepository textEntryRepository;
 
     public Text saveText(Text text) {
-        log.info("Saving text");
+        log.info("Saving text {}", text);
         return textEntryRepository.save(text);
     }
 }
